@@ -1,4 +1,4 @@
-\ProvidesClass{twentysecondcv}[2015/02/28 CV class]
+\ProvidesClass{twentysecondcv2}[2015/02/28 CV class]
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -113,15 +113,7 @@
 
 \renewcommand{\givenskill}{
 \noindent
-\begin{tikzpicture}
-\foreach [count=\i] \x/\y in {#1}
-{
 
-\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
-\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
-\node [above right ] at (0,\i+0.4) {\x};
-}
-\end{tikzpicture}
 }
 }
 \newcommand{\givenskill}{}
